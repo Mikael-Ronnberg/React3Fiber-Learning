@@ -5,7 +5,7 @@ import { TestBox } from "./components/TestBox";
 
 function App() {
   return (
-    <Canvas camera={{ position: [0, 0, 20] }}>
+    <Canvas camera={{ position: [0, 0, 1] }}>
       <TestBox />
       <OrbitControls />
     </Canvas>
