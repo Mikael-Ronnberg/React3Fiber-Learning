@@ -5,14 +5,9 @@ import { TestBox } from "./components/TestBox";
 
 function App() {
   return (
-    <Canvas camera={{ position: [0, 0, 7] }}>
+    <Canvas camera={{ position: [0, 0, 20] }}>
       <TestBox />
-      <OrbitControls
-        enablePan={true}
-        enableZoom={true}
-        enableRotate={true} //
-        target={[0, 0, 0]}
-      />
+      <OrbitControls />
     </Canvas>
   );
 }
