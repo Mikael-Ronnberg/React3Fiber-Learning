@@ -13,6 +13,8 @@ export const TestAnimation = () => {
   const uniforms = {
     u_amplitude: { value: 12.0 },
     u_time: { value: 0 },
+    u_color: { value: new THREE.Color("purple") },
+    u_timecolor: { value: 0 },
   };
 
   const material = new THREE.RawShaderMaterial({
@@ -26,6 +28,7 @@ export const TestAnimation = () => {
     if (meshRef.current) {
       const elapsedTime = clock.getElapsedTime();
       material.uniforms.u_time.value = elapsedTime;
+      material.uniforms.u_timecolor.value = elapsedTime;
     }
   });
 
